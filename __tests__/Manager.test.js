@@ -13,4 +13,9 @@ test('creates a manager object', () => {
     expect(manager.officeNumber).toEqual(expect.any(Number));
   });
 
-
+  test("gets manager's role as an object", () => {
+    const manager = new Manager();
+  
+    expect(manager.getRole()).toHaveProperty('role');
+    expect(manager.getRole().role).toEqual('Manager');
+  });

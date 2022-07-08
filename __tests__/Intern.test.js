@@ -15,4 +15,16 @@ test('creates an intern object', () => {
   });
 
 
-  // 'wilfred', 501, 'fredmail', 'harvard'
+
+  test("gets interns's role as an object", () => {
+    const intern = new Intern();
+  
+    expect(intern.getRole()).toHaveProperty("role");
+    expect(intern.getRole().role).toEqual('Intern');
+  });
+  
+  test("gets intern's school as an object", () => {
+    const intern = new Intern();
+  
+    expect(intern.getSchool()).toHaveProperty("school");
+  });
