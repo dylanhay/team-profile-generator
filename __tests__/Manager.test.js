@@ -1,6 +1,6 @@
 const Manager = require('../lib/Manager.js');
 
-jest.mock('../lib/Manager');
+// jest.mock('../lib/Manager');
 
 test('creates a manager object', () => {
     const manager = new Manager();
