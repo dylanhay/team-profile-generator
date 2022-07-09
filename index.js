@@ -5,7 +5,8 @@ const Employee = require('./lib/Employee.js');
 // const Engineer = require('./lib/Engineer.js');
 // const Intern = require('./lib/Intern.js');
 
-new Employee().initializeApp();
+new Employee().getName();
+
 // new Manager().getManager();
 // new Option().getOption();
 // new Engineer().getEngineer();
