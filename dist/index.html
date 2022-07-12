@@ -1,5 +1,4 @@
-function createPage(managerBlock, engineerBlocks, internBlocks) {
-    const pageTemplate = `<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -16,27 +15,53 @@ function createPage(managerBlock, engineerBlocks, internBlocks) {
             <div class="manager">
                 <div class="manager-card">
                     <h2>Manager</h2>
-                    ${managerBlock}
+                    <div class="layout">
+    <div class="title">
+        <h2 class="name">a</h2>
+        <h3 class="role">Manager</h3>
+    </div>
+    <body>
+        <p>ID: a</p>
+        <p>Email:<a href="mailto:undefined">a</a></p>
+        <p>Office: a</p>
+    </body>
+</div>
                 </div>
             </div>
             <div class="employees">
                 <div class="engineers">
                     <h2>Engineers</h2>
                     <div class="engineer-cards">
-                        ${engineerBlocks}
+                        <div class="layout">
+        <div class="title">
+            <h2 class="name">b</h2>
+            <h3 class="role">Engineer</h3>
+        </div>
+        <body>
+            <p>ID: b</p>
+            <p>Email: <a href="mailto:b">b</a></p>
+            <p>Github: <a href="https://www.github.com/b">b</a></p>
+        </body>
+    </div>
                     </div>
                 </div>
                 <div class="interns">
                     <h2>Interns</h2>
                     <div class="intern-cards">
-                        ${internBlocks}
+                        <div class="layout">
+        <div class="title">
+            <h2 class="name">c</h2>
+            <h3 class="role">Engineer</h3>
+        </div>
+        <body>
+            <p>ID: c</p>
+            <p>Email: <a href="mailto:c">c</a></p>
+            <p>School: c</p>
+        </body>
+    </div>
                     </div>
                 </div>
             </div>
         </main>
     </body>
-    </html>`
-    return pageTemplate
-}
-
-module.exports = createPage;
+    </html>
