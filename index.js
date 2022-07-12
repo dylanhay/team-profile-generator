@@ -1,6 +1,6 @@
-const Employee = require('./lib/Employee.js');
+const Run = require('./lib/Run.js');
 
-Employee().getName();
+new Run().initializeManager();
 
 
 
