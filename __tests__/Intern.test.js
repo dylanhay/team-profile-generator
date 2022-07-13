@@ -1,3 +1,4 @@
+//module export from Intern.js
 const Intern = require("../lib/Intern.js");
 const intern = new Intern(
   "Bob Vance",

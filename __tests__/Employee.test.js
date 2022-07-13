@@ -1,3 +1,4 @@
+//module export from Employee.js
 const Employee = require("../lib/Employee.js");
 const employee = new Employee("Bob Vance", 101, "bob@vancerefrigeration.com");
 

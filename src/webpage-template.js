@@ -1,3 +1,5 @@
+//webpage html template
+
 function createPage(managerBlock, engineerBlocks, internBlocks) {
   const pageTemplate = `<!DOCTYPE html>
     <html lang="en">

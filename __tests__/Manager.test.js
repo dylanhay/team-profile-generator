@@ -1,3 +1,4 @@
+//module export from Manager.js
 const Manager = require("../lib/Manager.js");
 const manager = new Manager(
   "Bob Vance",

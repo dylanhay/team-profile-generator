@@ -1,4 +1,4 @@
-//builds an html block for the manager
+//builds manager html block
 function createManagerBlock(manager) {
   const managerBlock = `<div class="manager-block">
     <div>
@@ -14,7 +14,7 @@ function createManagerBlock(manager) {
   return managerBlock;
 }
 
-//loops through array of engineers to build an html block for each engineer
+//loops through array of engineers to build engineer html blocks
 function createEngineerBlocks(engineers) {
   let engineerBlocks = ``;
   for (let i = 0; i < engineers.length; i++) {
@@ -35,7 +35,7 @@ function createEngineerBlocks(engineers) {
   return engineerBlocks;
 }
 
-//loops through array of interns to build an html block for each engineer
+//loops through array of interns to build intern html blocks
 function createInternBlocks(interns) {
   let internBlocks = ``;
   for (let i = 0; i < interns.length; i++) {

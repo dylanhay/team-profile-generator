@@ -10,10 +10,12 @@ const inquirer = require("inquirer");
 inquirer.registerPrompt("loop", require("inquirer-loop")(inquirer));
 const fs = require("fs");
 
+//module exports from 'Manager.js', 'Engineer.js', 'Intern.js'
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 
+//inquirer prompts to gather manager, engineer and intern info
 const promptInfo = () => {
   console.log(`
     =====================================================================
@@ -166,6 +168,7 @@ const promptInfo = () => {
 
 //prompt function call => page is generated and written
 promptInfo().then((pageData) => {
+  //inquirer prompt responses sent to Manager constructor
   const manager = new Manager(
     pageData.name,
     pageData.id,
@@ -174,9 +177,12 @@ promptInfo().then((pageData) => {
   );
   
   const employees = pageData.employees;
+  
+  //engineer and intern arrays initialized
   const engineerArr = [];
   const internArr = [];
 
+  //inquirer prompt responses sent to engineer and intern arrays
   for (let i = 0; i < employees.length; i++) {
     const e = employees[i];
     if (e.employeeTitle === "Engineer") {
@@ -188,11 +194,15 @@ promptInfo().then((pageData) => {
     }
   }
 
+  //html blocks rendered
   const managerBlockBuild = createManagerBlock(manager);
   const engineerBlocksBuild = createEngineerBlocks(engineerArr);
   const internBlocksBuild = createInternBlocks(internArr);
+  
+  //webpage html template created with html blocks as arguments
   const webpage = createPage(managerBlockBuild, engineerBlocksBuild, internBlocksBuild);
 
+  //webpage written to index.html in 'dist/' directory
   fs.writeFile("./dist/index.html", webpage, (err) => {
     if (err) throw new Error(err);
 
