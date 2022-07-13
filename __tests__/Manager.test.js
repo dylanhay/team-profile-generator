@@ -1,10 +1,7 @@
 const Manager = require('../lib/Manager.js');
+const manager = new Manager('Bob Vance', 101, 'bob@vancerefrigeration.com', 210);
 
-// jest.mock('../lib/Manager');
-
-test('creates a manager object', () => {
-    const manager = new Manager();
-  
+test('creates a manager object with expected parameters', () => {
     expect(manager.name).toEqual(expect.any(String));
     expect(manager.name.length).toBeGreaterThan(0);
     expect(manager.id).toEqual(expect.any(Number));
@@ -13,7 +10,7 @@ test('creates a manager object', () => {
     expect(manager.officeNumber).toEqual(expect.any(Number));
   });
 
-  test("gets manager's role as an object", () => {
+  test("checks manager's role", () => {
     const manager = new Manager();
   
     expect(manager.getRole()).toHaveProperty('role');
