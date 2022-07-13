@@ -26,7 +26,7 @@ To run the application, enter "node index.js" in terminal
 * JavaScript
 
 ## Walkthrough Video
-
+https://drive.google.com/file/d/1H-L3MTO3FHK56uzl5UDXvHBoGbLui2Ec/view
 
 ## Contribution
 Made with ❤️ by Dylan Hay
