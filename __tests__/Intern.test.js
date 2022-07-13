@@ -17,8 +17,6 @@ test("creates an intern object with expected parameters", () => {
 });
 
 test("checks intern's role", () => {
-  const intern = new Intern();
-
   expect(intern.getRole()).toHaveProperty("role");
   expect(intern.getRole().role).toEqual("Intern");
 });

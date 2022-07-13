@@ -172,29 +172,26 @@ promptInfo().then((pageData) => {
     pageData.email,
     pageData.officeNumber
   );
+  
   const employees = pageData.employees;
-  const engineers = [];
-  const interns = [];
+  const engineerArr = [];
+  const internArr = [];
 
   for (let i = 0; i < employees.length; i++) {
     const e = employees[i];
     if (e.employeeTitle === "Engineer") {
       const engineer = new Engineer(e.name, e.id, e.email, e.github);
-      engineers.push(engineer);
+      engineerArr.push(engineer);
     } else if (e.employeeTitle === "Intern") {
       const intern = new Intern(e.name, e.id, e.email, e.school);
-      interns.push(intern);
+      internArr.push(intern);
     }
   }
 
   const managerBlockBuild = createManagerBlock(manager);
-  const engineerBlocksBuild = createEngineerBlocks(engineers);
-  const internBlocksBuild = createInternBlocks(interns);
+  const engineerBlocksBuild = createEngineerBlocks(engineerArr);
+  const internBlocksBuild = createInternBlocks(internArr);
   const webpage = createPage(managerBlockBuild, engineerBlocksBuild, internBlocksBuild);
-
-//   console.log(manager);
-//   console.log(engineers);
-//   console.log(interns);
 
   fs.writeFile("./dist/index.html", webpage, (err) => {
     if (err) throw new Error(err);

@@ -14,12 +14,11 @@ function createPage(managerBlock, engineerBlocks, internBlocks) {
         </hero>
         <main>
             <div class="manager-block-par">
-                    ${managerBlock}
+                ${managerBlock}
             </div>
             <div class="employees">
-                        ${engineerBlocks}
-                        ${internBlocks}
-                </div>
+                ${engineerBlocks}
+                ${internBlocks}
             </div>
         </main>
     </body>
