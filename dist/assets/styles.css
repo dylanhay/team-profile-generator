@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Garamond", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  
+}
+
+
+h1 {
+  font-size: 40px;
+  padding: 2%;
+  margin: 2% 20%;
+  text-align: center;
+  border: 5px solid #000000;
+  border-radius: 15px;
+  background-color: rgb(233, 111, 111);
+  color: #000000;
+  
+}
+
+.manager-block-par {
+    display: flex;
+}
+
+.manager-block {
+  border: 5px solid #000000;
+  padding: 2%;
+  justify-content: center;
+  flex: 0 1 320px;
+  margin: 1% auto;
+  background-color: rgb(234, 166, 83);
+  text-align: center;
+  
+}
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block {
+    border: 5px solid #000000;
+    padding: 2%;
+    text-align: center;
+    margin: 1%;
+    flex: 1 0 250px;
+  }
+
+.engineer {
+    background-color: rgb(170, 116, 221);
+}
+
+.intern {
+    background-color: rgb(116, 243, 201);
+  }
+
+
