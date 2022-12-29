@@ -3,30 +3,33 @@
 ## Description
 An application that generates an HTML webpage of manager, engineer and intern information profiles based on user specified criteria.
 
+## License  
+This application is covered under the following license. Please review the link below for additional information pertaining to the license.
+    
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)  
+https://www.gnu.org/licenses/gpl-3.0
+
 ## Table of Contents
-[Installation Instructions](#installation-instructions)  
 [Built With](#built-with)  
+[Installation](#installation)  
 [Walkthrough Video](#walkthrough-video)  
 [Contribution](#contribution) 
 
-## Installation Instructions
-Node.js, npm, the npm inquirer package (v8.2.4), and npm inquirer-loop must be installed to use this application.
-
-* Node.js can be downloaded and installed from https://nodejs.org/en/download/  
-* To initialize npm, enter "npm init" in terminal while in the root folder of the project  
-* To install npm inquirer package (v8.2.4), enter "npm install inquirer@8.2.4" in terminal while in the root folder of the project
-* To install npm inquirer-loop enter "npm install --save inquirer-loop" in terminal while in the root folder of the project
-
-To run the application, enter "node index.js" in terminal
-
 ## Built With
+* JavaScript
 * Node.js
+* Inquirer
+* Jest
 * HTML
 * CSS
-* JavaScript
+
+## Installation
+To run locally once cloned:
+* Enter `npm install` in the command line while in the root folder to install the required npm packages
+* Enter `node index.js` in the command line while in the root folder to launch the application
 
 ## Walkthrough Video
 https://drive.google.com/file/d/1H-L3MTO3FHK56uzl5UDXvHBoGbLui2Ec/view
 
 ## Contribution
-Made with ❤️ by Dylan Hay
+Built by Dylan Hay
