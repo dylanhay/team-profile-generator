@@ -12,6 +12,7 @@ https://www.gnu.org/licenses/gpl-3.0
 ## Table of Contents
 [Built With](#built-with)  
 [Installation](#installation)  
+[Testing](#testing)  
 [Walkthrough Video](#walkthrough-video)  
 [Contribution](#contribution) 
 
@@ -25,8 +26,11 @@ https://www.gnu.org/licenses/gpl-3.0
 
 ## Installation
 To run locally once cloned:
-* Enter `npm install` in the command line while in the root folder to install the required npm packages
-* Enter `node index.js` in the command line while in the root folder to launch the application
+* Enter `npm install` in the CLI to install the required npm packages
+* Enter `node index.js` in the CLI to launch the application
+
+## Testing
+* Enter `npm test` in the CLI to run Jest
 
 ## Walkthrough Video
 https://drive.google.com/file/d/1H-L3MTO3FHK56uzl5UDXvHBoGbLui2Ec/view
